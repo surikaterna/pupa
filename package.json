@@ -1,0 +1,36 @@
+{
+  "name": "pupa",
+  "version": "1.0.0",
+  "description": "Projection framework",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test --recursive",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --recursive test -u exports -R spec",
+    "coverage-start": "istanbul cover node_modules/mocha/bin/_mocha test --recursive -- -u exports -R spec && start coverage/lcov-report/index.html",
+    "jshint": "jshint ./lib",
+    "mochify": "mochify --watch",
+    "jscs": "jscs -p google ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surikaterna/pupa.git"
+  },
+  "author": "Andreas Karlsson",
+  "license": "MIT",
+  "devDependencies": {
+    "istanbul": "^0.3.2",
+    "jshint": "^2.5.10",
+    "mocha": "^2.0.1",
+    "should": "^4.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/surikaterna/pupa/issues"
+  },
+  "homepage": "https://github.com/surikaterna/pupa#readme",
+  "dependencies": {
+    "lodash": "^3.9.3"
+  }
+}
